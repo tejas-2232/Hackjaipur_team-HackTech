@@ -4,7 +4,7 @@ const app = express(); //creating express app
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
 
-const port= process.env.PORT || 3004;
+const port= process.env.PORT || 3008;
  http.listen(port,() => {
      console.log("listening on port"+port)
  });
