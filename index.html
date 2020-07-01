@@ -6,6 +6,8 @@
 <html class="no-js">
 <!--<![endif]-->
 
+<!-- firebase is added for testing purpose -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,69 +17,94 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
-<style>
-body {
-    font-family: 'Berkshire Swash';font-size: 22px;
-}
-</style>
-    </head>
+    <link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Berkshire Swash';
+            font-size: 22px;
+        }
+    </style>
+</head>
 
 <body>
+    <!-- firebase services-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.15.5/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.15.5/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
+
+
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <br>
-    <h3 class="h3 mb-3 font-weight-normal"> <center><b>videoXT</b> </center></h1> <hr>
-    <h3 class="h3 mb-3 font-weight-normal"> <center>Text & video chat with your friends </center></h3> <hr>
-    <div id="chat-window">
-           
-        <div id="output"> </div>
-        <div id="typing"> </div>
-    </div>
+    <h3 class="h3 mb-3 font-weight-normal">
+        <center><b>videoXT</b> </center>
+        </h1>
+        <hr>
+        <h3 class="h3 mb-3 font-weight-normal">
+            <center>Text & video chat with your friends </center>
+        </h3>
+        <hr>
+        <div id="chat-window">
 
-
-    <div class="container">
-
-        <label for="handle" class="sr-only">Name</label> 
-        <input type="text" id="handle" class="form-control" placeholder="Name" required autofocus>
-
-        <label for="message" class="sr-only">Message</label> 
-        <input type="text" id="message" class="form-control" placeholder="Enter a message" required>
-
-        <button id="button" class="btn btn-lg btn-primary btn-block" type="submit">Send</button>
-    </div>
-
-    <hr>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-6">
-                <b> <i> Participants</i></b>
-                <video id="rVideo" autoplay="autplay">
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-6">
-                <b><i>HOST</i> </b>
-                <video id="lVideo" autoplay="autplay" muted>
-            </div>
+            <div id="output"> </div>
+            <div id="typing"> </div>
         </div>
 
-        <span id="displayId"></span>
 
-        <input type="text" id="connId" class="form-control" placeholder="Enter a connection ID" required>
-        <button id="conn_button" class="btn btn-lg btn-success btn-block" type="submit">Connect</button>
-        <button id="call_button" class="btn btn-lg btn-danger btn-block" type="submit">Call</button>
+        <div class="container">
 
-       
+            <label for="handle" class="sr-only">Name</label>
+            <input type="text" id="handle" class="form-control" placeholder="Name" required autofocus>
 
-    </div>
-    <div> <h6> <center>copyright @ <a href="https://www.github.com/tejas-2232"> TejasBachhav.com | 2020-21</a> </center> </h6></div>
+            <label for="message" class="sr-only">Message</label>
+            <input type="text" id="message" class="form-control" placeholder="Enter a message" required>
+
+            <button id="button" class="btn btn-lg btn-primary btn-block" type="submit">Send</button>
+        </div>
+
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <b> <i> Participants</i></b>
+                    <video id="rVideo" autoplay="autplay">
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <b><i>HOST</i> </b>
+                    <video id="lVideo" autoplay="autplay" muted>
+                </div>
+            </div>
+
+            <span id="displayId"></span>
+
+            <input type="text" id="connId" class="form-control" placeholder="Enter a connection ID" required>
+            <button id="conn_button" class="btn btn-lg btn-success btn-block" type="submit">Connect</button>
+            <button id="call_button" class="btn btn-lg btn-danger btn-block" type="submit">Call</button>
 
 
-    <script src="/socket.io/socket.io.js"></script>
 
-    <!-- PeerJS javascript client -->
-    <script src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"></script>
-    <script src="/client.js"></script>
+        </div>
+        <div>
+            <h6>
+                <center>copyright @ <a href="https://www.github.com/tejas-2232"> TejasBachhav.com | 2020-21</a>
+                </center>
+            </h6>
+        </div>
+
+
+        <script src="/socket.io/socket.io.js"></script>
+
+        <!-- PeerJS javascript client -->
+        <script src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"></script>
+        <script src="/client.js"></script>
 </body>
 
 </html>
