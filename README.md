@@ -26,3 +26,37 @@ __Links:__  <button><a href="https://github.com/tejas-2232/Hackjaipur_team-HackT
 <button>  You can check it live here @<a href ="https://videoxt.herokuapp.com/">videoXT</a>  </button>
 <hr> 
 
+# starting with project
+
+<bold> You will need nodemon to run server.js file <bold>
+## Nodemon
+<img  src ="https://user-images.githubusercontent.com/13700/35731649-652807e8-080e-11e8-88fd-1b2f6d553b2d.png">
+ <hr>
+ <p> <b>Nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.<b> Nodemon does not require any additional changes to your code or method of development. nodemon is a replacement wrapper for node. To use nodemon, replace the word node on the command line when executing your script.</p>
+<hr>
+   
+## Installation:
+Either through cloning with git or by using [npm](https://www.npmjs.com/) (the recommended way):
+ > npm install -g nodemon
+ 
+And nodemon will be installed globally to your system path.
+
+You can also install nodemon as a development dependency:
+> npm install --save-dev nodemon
+
+<p>With a local installation, nodemon will not be available in your system path. Instead, the local installation of nodemon can be run by calling it from within an npm script (such as npm start) or using npx nodemon</p>
+
+<hr>
+
+## Usage
+
+nodemon wraps your application, so you can pass all the arguments you would normally pass to your app:
+> nodemon [your app name]
+
+<b>Here use
+  > nodemon server.js 
+
+to run the project after cloning application to your local machine.</b>
+
+
+
