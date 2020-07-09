@@ -6,8 +6,8 @@ __Title:__ Video and text chatting web application <br>
 __App Name:__ videoXT  <br>
 __The problem it solves:__ <p> The problem focuses on two tracks. First track is diversity,  i.e anyone can use this application to do<br>
               video chatting in their day to day life.It doesnt descriminate users based on age,gender,color or anything society finds descriminating.
-              We belive in __*Unity in Diversity.*__  
-              Second trackc is Remote working.As work from home is becoming is a widespread culture, technology
+              We believe in __*Unity in Diversity.*__  
+              Second track is Remote working.As work from home is becoming is a widespread culture, technology
 can make the process easier. This app is best to use for peoples who are working from their home. Also it can be used in one-to-one chatting between __doctor-patient__ or __Teacher-student__,
 or any local __shopkeeper-customer.__ Using the app is very simple. Just open the URL & you are good to go.</p><hr>
 
