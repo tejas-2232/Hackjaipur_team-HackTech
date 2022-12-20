@@ -58,5 +58,6 @@ nodemon wraps your application, so you can pass all the arguments you would norm
 
 to run the project after cloning application to your local machine.</b>
 
+*This app is running on Heroku Stack-22*
 
 
