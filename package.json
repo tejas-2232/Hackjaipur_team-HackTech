@@ -12,7 +12,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "peer": "^0.5.3",
-    "peerjs": "^1.2.0",
+    "peerjs": "^1.4.7",
     "socket.io": "^2.3.0"
   }
 }
